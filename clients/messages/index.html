@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<script src="index.js"></script>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>messages</title>
+    </head>
+    <body>
+        <div>
+            <p>Errors will appear here if any: </p>
+            <p id="error">No errors</p>
+        </div>
+        <br>
+        <div id="screen-landing">
+            <div>
+                <p>Sign In:</p>
+                <form>
+                    <label for="signin-email">Email:</label><br>
+                    <input type="text" id="signin-email" name="signin-email">
+                    <br />
+                    <br />
+                    <label for="signin-password">Password:</label><br>
+                    <input type="password" id="signin-password" name="signin-password">
+                    <br />
+                    <br />
+                    <button id="signin-submit" type="button">Login</button>
+                </form>
+            </div>
+            <br>
+            <div>
+                <p>Sign Up:</p>
+                <form>
+                    <label for="signup-email">Email:</label><br>
+                    <input type="text" id="signup-email" name="signup-email">
+                    <br />
+                    <br />
+                    <label for="signup-password">Password:</label><br>
+                    <input type="password" id="signup-password" name="signup-password">
+                    <br />
+                    <br />
+                    <label for="signup-passwordconfirm">Password Confirm:</label><br>
+                    <input type="password" id="signup-passwordconfirm" name="signup-passwordconfirm">
+                    <br />
+                    <br />
+                    <label for="signup-username">Username:</label><br>
+                    <input type="text" id="signup-username" name="signup-username">
+                    <br />
+                    <br />
+                    <label for="signup-firstname">First Name:</label><br>
+                    <input type="text" id="signup-firstname" name="signup-firstname">
+                    <br />
+                    <br />
+                    <label for="signup-lastname">Last Name:</label><br>
+                    <input type="text" id="signup-lastname" name="signup-lastname">
+                    <br />
+                    <br />
+                    <button id="signup-submit" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="screen-loggedin" style="display:none;visibility:none;">
+            <p>First Name: </p>
+            <p id="loggedin-firstname"></p>
+            <p>Last Name: </p>
+            <p id="loggedin-lastname"></p>
+            <button id="loggedin-signout">Sign Out</button>
+            <br />
+            <p>Search for users: </p>
+            <input type="text" id="loggedin-search-input">
+            <p>Search Results:</p>
+            <table id="loggedin-search-results">
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Photo</th>
+                </tr>
+                <tbody>
+                </tbody>
+            </table>
+            <br />
+            <p>Target Channel Name:</p>
+            <input type="text" id="loggedin-channelname-input">
+            <p>Optional Channel Description:</p>
+            <input type="text" id="loggedin-channeldescription-input">
+            <button id="loggedin-createchannel">Create Channel</button>
+            <button id="loggedin-deletechannel">Delete Channel</button>
+            <input type="text" id="loggedin-message-input">
+            <button id="loggedin-send">Send Message</button>
+            <br />
+            <p>Message Log</p>
+            <div id="loggedin-messagelog">
+            </div>
+            
+
+        </div>
+
+    </body>
+</html>
+

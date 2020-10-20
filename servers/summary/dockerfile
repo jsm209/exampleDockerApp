@@ -1,0 +1,7 @@
+# add the necessary instructions
+# to create a Docker container image
+FROM alpine
+RUN apk add --no-cache ca-certificates
+COPY summary /summary
+EXPOSE 6000-6010
+ENTRYPOINT ["/summary"]
