@@ -6,3 +6,4 @@ This is a class project dedicated to exploring serverside technologies. The fina
 - Used various databases to manage sessions, users, and messaging.
 - Implemented user search with trie tree traversals.
 - Used Docker to dockerize each microservice and AWS to manage a complex web server architecture.
+- Learned workflow techniques like creating custom scripts to automate building and deployment work.
